@@ -1,0 +1,7 @@
+$bg: #020202;
+$active: #5DFFF2;
+$hover: #25CCBF;
+
+@mixin def-anim {
+    transition: all .3s ease;
+}

@@ -1,0 +1,92 @@
+.smi {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        opacity: .4;
+        content: '';
+        z-index: -1;
+    }
+
+    &__in {
+        padding: 50px 0 150px 0;
+    }
+    &__head {
+        margin-bottom: 70px;
+    }
+
+    &__body {
+
+        &_slider {
+
+            &_wr {
+                
+            }
+
+            &_sl {
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 1px;
+                height: 100%;
+                &_img {
+                    // margin-bottom: 28px;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        display: flex;
+                    }
+
+                    &_ex {
+                        position: absolute;
+                        left: 32px;
+                        bottom: -13px;
+                        padding: 6px 10px;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $hover;
+                        text-transform: uppercase;
+                        background: rgba(2, 2, 2, 0.9);
+                        border: 1px solid $hover;
+                    }
+                }
+
+                &_body {
+                    padding: 28px 32px;
+                    display: flex;
+                    flex-direction: column;
+
+                    &_name {
+                        font-weight: 900;
+                        font-size: 20px;
+                        line-height: 25px;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 15px;
+                    }
+
+                    &_text {
+                        font-size: 16px;
+                        line-height: 22px;
+                        opacity: .5;
+                        margin-bottom: 25px;
+                    }
+
+                    &_action {
+                        flex: 1 0 auto;
+                        align-items: flex-end;
+                        display: flex;
+
+                        &_btn {
+                            padding: 30px;
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}

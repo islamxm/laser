@@ -1,0 +1,72 @@
+.distr {
+    background-color: #fff;
+    color: $bg;
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__list {
+        display: flex;
+
+        &_item {
+            width: calc(100% / 3);
+            border: 1px solid rgba(51, 51, 51, 0.2);
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 50px;
+            position: relative;
+            &_link.btn-default {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 5px 12px;
+                background-color: #fff;
+
+                .text {
+                    color: $bg;
+                }
+
+                .icon {
+                    svg {
+                        path {
+                            stroke: $bg;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    .text {
+                        color: $hover;
+                    }
+
+                    .icon {
+                        svg {
+                            path {
+                                stroke: $hover;
+                            }
+                        }
+                    }
+                }
+
+                &:active {
+                    background-color: #fff;
+                    .text {
+                        color: $active;
+                    }
+
+                    .icon {
+                        svg {
+                            path {
+                                stroke: $active;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

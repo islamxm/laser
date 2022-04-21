@@ -1,0 +1,34 @@
+//LIBS
+@import './libs/swiper';
+
+// GLOBAL
+@import './fonts';
+@import './global/vars';
+@import './global/global';
+
+
+
+
+//BLOCKS
+@import './blocks/header';
+@import './blocks/hero';
+@import './blocks/models';
+@import './blocks/benefits.scss';
+@import './blocks/video-section.scss';
+@import './blocks/review.scss';
+@import './blocks/geo.scss';
+@import './blocks/video.scss';
+@import './blocks/smi.scss';
+@import './blocks/buy.scss';
+@import './blocks/dealers.scss';
+@import './blocks/distr.scss';
+@import './blocks/footer.scss';
+@import './blocks/mobmenu.scss';
+
+
+//COMPONENTS
+@import './components/card';
+@import './components/btn-defult.scss';
+@import './components/btn-sm.scss';
+@import './components/pagination.scss';
+

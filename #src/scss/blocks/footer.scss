@@ -1,0 +1,213 @@
+.footer {
+
+    &__main {
+        padding: 70px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_left {
+            display: flex;
+            align-items: center;
+        }
+
+        &_logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 60px;
+        }
+
+        &_text {
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
+            color: #333333;
+        }
+
+        &_social {
+            display: flex;
+            align-items: center;
+
+
+            &_item.disabled {
+                opacity: .3;
+                pointer-events: none;
+            }
+            &_item {
+                border: 1px solid #333333;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 57px;
+                height: 57px;
+                border-radius: 100%;
+                margin: 0 12.5px;   
+                @include def-anim;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                svg {
+                    path {
+                        @include def-anim;
+                    }
+                }
+
+                &:hover {
+                    border-color: $hover;
+                    background-color: $hover;
+                    svg {
+                        path {
+                            fill: $bg;        
+                        }
+
+                        path.yt {
+                            fill: #fff;
+                        }
+                    }
+                }
+
+                &:active {
+                    border-color: $active;
+                    background-color: $active;
+                    svg {
+                        path {
+                            fill: $bg;
+                        }
+                        path.yt {
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+
+            // &_item.yt {
+
+            //     &:hover {
+            //         &:hover {
+            //             border-color: $hover;
+            //             background-color: $hover;
+            //             svg {
+            //                 path {
+            //                     fill: $bg; 
+                                
+            //                     &:last-child {
+            //                         fill: #fff;
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+
+    &__ex {
+        
+        border-top: 1px solid #333;
+
+        &_in {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &_main {    
+            display: flex;
+            align-items: center;
+            
+
+        }
+
+
+        &_cop {
+            font-size: 16px;
+            line-height: 19px;
+            opacity: .3;
+            margin-right: 40px;
+        }
+
+
+        &_policy {
+            font-size: 16px;
+            line-height: 19px;
+            @include def-anim;
+
+            &:hover {
+                color: $hover;
+            }
+
+            &:active {
+                color: $active;
+            }
+        }
+
+        &_action {
+
+            &_link {
+                display: flex;
+
+                &:hover {
+
+                    .btn {
+                        background-color: $hover;
+                        border-color: $hover;
+                        svg {
+                            path {
+                                stroke: $bg;
+                            }
+                        }
+                    }
+                }
+
+                &:active {
+                    .text {
+                        color: $active;
+                    }
+                    .btn {
+                        background-color: $active;
+                        border-color: $active;
+                        svg {
+                            path {
+                                stroke: $bg;
+                            }
+                        }
+                    }
+                }
+                
+                .text {
+                    padding: 31px 40px;
+                    border-left: 1px solid #333333;
+                    font-weight: 900;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    color: $hover;
+                    @include def-anim;
+                }
+
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0 25px;
+                    border-left: 1px solid #333;
+                    border-right: 1px solid #333;
+                    @include def-anim;
+                    svg {
+                        path {
+                            @include def-anim;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

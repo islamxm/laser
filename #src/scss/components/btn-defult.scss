@@ -1,0 +1,65 @@
+.btn-default.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.btn-default {
+    background-color: $bg;
+    @include def-anim;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .text {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        @include def-anim;
+    }
+
+    .icon {
+        margin-left: 10px;
+        svg  {
+            path {
+                @include def-anim;
+
+            }
+        }
+    }
+
+    &:hover {
+        background-color: $hover;
+
+        .text {
+            color: $bg;
+        }
+
+        .icon {
+            svg {
+                path {
+                    stroke: $bg;
+                }
+            }
+        }
+    }
+
+    &:active {
+        background-color: $active;
+
+        .text {
+            color: $bg;
+        }
+
+        .icon {
+            svg {
+                path {
+                    stroke: $bg;
+                }
+            }
+        }
+    }
+}

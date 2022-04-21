@@ -1,0 +1,174 @@
+.hero {
+    background-image: url('../img/hero/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // height: 100vh;
+    min-height: 100vh;
+    padding-top: 72px;
+
+    .container {
+        height: 100%;
+    }
+    &__in {
+        padding: 10vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__body {
+        // width: 55%;
+        margin-bottom: 80px;
+
+        &_subtitle {
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.18em;
+            margin-bottom: 31px;
+            color: $bg;
+            
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        &_title {
+            font-weight: 250;
+            font-size: 80px;
+            line-height: 92px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            color: $bg;
+
+            span {
+                display: block;
+            }
+        }
+
+        &_action {
+            display: flex;
+            align-items: center;
+
+            &_btn {
+                padding: 22px 40px;
+                margin: 0 13px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            &_btn.btn-sm {
+                padding: 21px 40px;
+            }
+        }
+    }
+
+    &__video {
+        width: 380px;
+        border: 1px solid $bg;
+
+        &_action {
+            display: flex;
+            border-top: 1px solid $bg;
+            color: $bg;
+
+            &_fr {
+                // padding: 0 26px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+
+                .swiper-pagination-total {
+                    opacity: .4;
+                }
+
+            }
+
+            &_name {
+                padding: 18px 20px;
+                border-left: 1px solid $bg;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        &_slider {
+            height: 213px;
+
+            &_sl {
+                height: 100%;
+                position: relative;
+
+                &_layer.active {
+                    opacity: 0;
+                    z-index: -1;
+                }
+                &_layer {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    background: rgba(51, 51, 51, 0.4);
+                    backdrop-filter: blur(6px);
+                    opacity: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include def-anim;
+
+                    &_btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;font-weight: 900;
+                        font-size: 16px;
+                        line-height: 20px;
+                        /* identical to box height */
+                        
+                        letter-spacing: 0.18em;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                }
+
+                video {
+                    width: 100%;   
+                    height: 100%;
+
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .hero {
+        background-image: unset;
+        &__in {
+
+        }
+
+        &__body {
+            
+        }
+    }
+}
