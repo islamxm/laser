@@ -183,3 +183,76 @@
         }
     }
 }
+
+
+@media (max-width: 1150px) {
+
+    .geo {
+
+        &:after {
+            display: none;
+        }
+
+        &__in {
+
+        }
+
+        &__head {
+            margin-bottom: 30px;
+            font-size: 30px;
+            line-height: 42px;
+        }
+
+        &__body {
+
+            &_main {
+
+                &_title {
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                &_list {
+                    flex-wrap: wrap;
+                    padding: 0 45px;
+
+                    &_item {
+                        width: 100%;
+                        margin-bottom: 30px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            &_ex {
+                flex-wrap: wrap;
+
+                &_main {
+                    width: 100%;
+                    padding: 20px 25px;
+                    
+                    &_head {
+                        text-align: center;
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+
+                    &_text {
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+
+                &_btn {
+                    width: 100%;
+                    padding: 20px 10px;
+                }
+            }
+        }
+    }
+}

@@ -5,12 +5,18 @@ export const smiSlider = () => {
 
     if(el) {
         const slider = new Swiper(el, {
-            spaceBetween: 60,
-            slidesPerView: 3,
+            slidesPerView: 1,
+            spaceBetween: 20,
             modules: [Navigation],
             navigation: {
                 prevEl: '.smi__head_nav_prev',
                 nextEl: '.smi__head_nav_next'
+            },
+            breakpoints: {
+                1150: {
+                    spaceBetween: 60,
+                    slidesPerView: 3,
+                }
             }
         });
     }

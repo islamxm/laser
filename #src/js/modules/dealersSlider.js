@@ -6,11 +6,17 @@ export const dealersSlider = () => {
     if(el) {
         const slider = new Swiper(el, {
             spaceBetween: 0,
-            slidesPerView: 3,
+            slidesPerView: 2,
             modules: [Navigation], 
             navigation: {
                prevEl: '.dealers__head_nav_prev',
                nextEl: '.dealers__head_nav_next'
+            },
+            breakpoints: {
+                1150: {
+                    spaceBetween: 0,
+                    slidesPerView: 3,
+                }
             }
         });
     }

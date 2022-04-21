@@ -211,3 +211,128 @@
         }
     }
 }
+
+@media (max-width: 1150px) {
+    .footer {
+
+        &__main {
+            flex-wrap: wrap;
+            padding-bottom: 26px;
+            padding-top: 50px;
+
+            &_left {
+                order: 2;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+            }
+
+            &_logo {
+                // width: 48%;
+                // margin-right: 0;
+                margin-bottom: 20px;
+
+                
+            }
+
+            &_logo.l {
+                margin-right: 0;
+                
+            }
+
+            &_text {
+                width: 100%;
+                text-align: center;
+            }
+
+            &_social {
+                width: 100%;
+                order: 1;
+                justify-content: center;
+                margin-bottom: 35px;
+
+                &_item {
+                    width: 38px;
+                    height: 38px;
+                    margin: 0 10px;
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        &__ex {
+            border: none;
+
+            &_in {
+                flex-wrap: wrap;
+                padding: 0;
+
+            }
+
+            &_main {
+                order: 2;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-bottom: 32px;
+            }
+
+            &_cop {
+                width: 100%;
+                text-align: center;
+                margin-right: 0;
+                order: 2;
+            }
+
+            &_policy {
+                width: 100%;
+                margin-bottom: 32px;
+                text-align: center;
+                order: 1;
+            }
+
+            &_action {
+                order: 1;
+                width: 100%;
+                border-top: 1px solid rgba(255, 255, 255, .40);
+                border-bottom: 1px solid rgba(255, 255, 255, .40);
+                margin-bottom: 32px;
+
+                &_link {
+                    width: 100%;
+
+                    .text {
+                        flex: 1 0 auto;
+                        border: none;
+                    }
+
+                    .btn {
+                        border-color: rgba(255, 255, 255, .4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .footer {
+
+        &__main {
+
+            &_logo {
+                width: 35%;
+
+                img {
+                    width: 100%;    
+                    height: 100%;   
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

@@ -139,3 +139,132 @@
         
     }
 }
+
+@media (max-width: 1150px) {
+    .review.review-leftside {
+
+        .review__body {
+            justify-content: flex-end;
+            &_main {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+    
+                &_top {
+    
+                    &_title {
+    
+                    }
+                }
+    
+                &_pn {
+                    padding-top: 15px;
+                    padding-left: 15px;
+                    padding-bottom: 15px;
+                    padding-right: 128px;
+    
+                    &:after {
+                        right: 0;
+                        left: unset;
+                        border-left: none;
+                        border-left: 1px solid rgba(255, 255, 255, 0.3);;
+                    }
+                }
+            }
+    
+            &_video {
+                right: unset;
+                left: 0;
+            }
+        }
+    }
+    .review {
+        &:after {
+            top: 15px;
+        }
+        &__in {
+            padding: 25px 0 50px 0;
+        }
+
+        &__body {
+
+            &_main {
+                width: 100%;
+                &_top {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    &_title {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                &_pn {
+                    padding-top: 15px;
+                    padding-left: 15px;
+                    padding-bottom: 15px;
+
+                    
+
+                    // &_text {
+                    //     font-size: 14px;
+                    //     line-height: 20px;
+                    //     margin-bottom: 20px;
+                    // }
+
+                    // &_ex {
+                    //     font-size: 12px;
+                    //     line-height: 17px;
+                    // }
+                }
+            }
+
+            &_video {
+                display: none;
+            }
+
+            
+        }
+    }
+}
+
+
+@media(max-width: 700px) {
+
+    .review {
+
+        &__body {
+
+            &_main {
+
+                &_top {
+
+                    &_title {
+                        font-size: 16px;
+                        line-height: 22px;
+                        margin-bottom: 10px;
+                    }
+
+                    &_text {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+
+                &_pn {
+
+                    &_text {
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    &_ex {
+                        font-size: 12px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

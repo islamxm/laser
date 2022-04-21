@@ -58,3 +58,48 @@
         }
     }
 }
+
+@media (max-width: 1150px) {
+    .dealers {
+
+
+        &__in {
+
+        }
+
+        &__head {
+            justify-content: center;
+            margin-bottom: 20px;
+
+            &_title {
+                text-align: center;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+        &__body {
+
+            &_ex {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+
+    .dealers {
+
+        &__body {
+
+            &_slider {
+                
+                &_sl {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

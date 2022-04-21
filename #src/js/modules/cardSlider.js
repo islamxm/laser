@@ -12,6 +12,12 @@ export const cardSlider = () => {
             navigation: {
                 prevEl: '.models__head_nav_prev',
                 nextEl: '.models__head_nav_next'
+            },
+            enabled: false,
+            breakpoints: { 
+                1150: {
+                    enabled: true,
+                }
             }
         });
     }

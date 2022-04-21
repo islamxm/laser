@@ -70,3 +70,18 @@
         }
     }
 }
+
+
+@media (max-width: 1150px) {
+
+    .distr {
+
+        &__list {
+            flex-wrap: wrap;
+            
+            &_item {
+                width: 100%;
+            }
+        }
+    }
+}

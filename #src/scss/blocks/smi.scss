@@ -90,3 +90,58 @@
         }
     }
 }
+
+
+@media (max-width: 1150px) {
+
+    .smi {
+
+        &::after {
+            display: none;
+        }
+
+
+        &__in {
+            padding: 50px 0;
+        }
+
+        &__head {
+            font-size: 30px;
+            line-height: 42px;
+            margin-bottom: 25px;
+        }
+
+        &__body {
+
+            &_slider {
+                width: 90%;
+                overflow: visible;
+
+                &_sl {
+
+                    &_body {
+                        padding: 20px;
+
+                        &_name {
+                            font-size: 16px;
+                            line-height: 20px;
+                            margin-bottom: 7px;
+                        }
+
+                        &_text {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+
+                        &_action {
+
+                            &_btn {
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -72,6 +72,21 @@ body {
     text-transform: uppercase;
 }
 
+
+@media (max-width: 1150px) {
+    .section-slider-head {
+        justify-content: center;
+
+    }
+    .section-slider-title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 42px;
+    }
+}
+
+
+
 .nav-btns {
     display: flex;
     align-items: center;
@@ -128,6 +143,12 @@ body {
 
     &__item-next {
 
+    }
+}
+
+@media (max-width: 1150px) {
+    .nav-btns {
+        display: none !important;
     }
 }
 
