@@ -206,7 +206,7 @@
         &__body {
 
             &_main {
-
+                
                 &_title {
                     margin-bottom: 20px;
                     font-size: 20px;
@@ -230,10 +230,11 @@
 
             &_ex {
                 flex-wrap: wrap;
-
+                
                 &_main {
                     width: 100%;
                     padding: 20px 25px;
+                    border: 1px solid rgba(51, 51, 51, 0.2);
                     
                     &_head {
                         text-align: center;
@@ -251,6 +252,41 @@
                 &_btn {
                     width: 100%;
                     padding: 20px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .geo {
+
+        &__in {
+            padding: 30px 0;
+        }
+
+        &__body {
+
+            &_main {
+                margin-bottom: 40px;
+                &_list {
+                    padding: 0 30px;
+                    &_item {
+
+                        &_body {
+                            &_name {
+                                font-size: 16px;
+                                line-height: 22px;
+                                margin-bottom: 8px;
+                            }
+
+                            &_info {
+                                font-size: 14px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
                 }
             }
         }

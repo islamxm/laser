@@ -7,6 +7,7 @@ import { heroSlider } from './modules/heroSlider.js';
 import { mobmenu } from './modules/mobmenu.js';
 import { smiSlider } from './modules/smiSlider.js';
 import { videos } from './modules/videos.js';
+import MicroModal from 'micromodal';
 
 
 
@@ -21,4 +22,5 @@ document.addEventListener('DOMContentLoaded', () => {
     heroSlider();
     videos();
     mobmenu();
+    MicroModal.init();
 });

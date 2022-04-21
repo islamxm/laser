@@ -230,7 +230,18 @@
 
 
 @media(max-width: 700px) {
+    .review.review-leftside {
 
+        .review__body {
+
+            &_main {
+
+                &_pn {
+                    padding-right: 80px;
+                }
+            }
+        }
+    }
     .review {
 
         &__body {
@@ -252,7 +263,14 @@
                 }
 
                 &_pn {
-
+                    overflow: hidden;
+                    padding-right: 80px;
+                    &:after {
+                        content: url('../img/icons/chat-mob.svg');
+                        padding-top: 20px;
+                        width: 48px;
+                        
+                    }
                     &_text {
                         margin-bottom: 20px;
                         font-size: 14px;

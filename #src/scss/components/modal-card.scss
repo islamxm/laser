@@ -1,0 +1,145 @@
+.modal-card.is-open {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.modal-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    opacity: 0;
+    z-index: -1;
+    
+    @include def-anim;
+    
+    &__layer {
+        background-color: rgba(0, 0, 0, .4);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        padding: 10vh 0;
+        overflow-y: auto;
+    }
+
+    &__body {
+        width: 375px;
+        padding: 54px 30px;
+        background-color: $bg;
+        position: relative;
+
+
+        &_head {
+
+            &_name {
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 25px;
+                color: $hover;
+            }
+
+            &_close {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+            }
+        }
+
+        &_main {
+            padding-bottom: 12px;
+           margin-bottom: 20px;
+
+            &_sl {
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        &_info {
+            margin-bottom: 30px;
+            &_item {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 18px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 15px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .text {
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        &_action {
+
+            &_btn {
+                width: 100%;
+                margin-bottom: 12px;
+                padding: 13px 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &_btn.btn-default {
+                border: 1px solid #fff;
+            }
+
+            &_btn.btn-sm {
+
+                &:hover {
+
+                    .text {
+                        color: $bg;
+                    }
+                }
+                .text {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1150px) {
+
+    .modal-card {
+        display: none;
+    }
+}

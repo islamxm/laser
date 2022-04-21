@@ -107,7 +107,7 @@
                         <div class="models__body">
                             <div class="models__body_slider swiper">
                                 <div class="models__body_slider_wr swiper-wrapper">
-                                    <div class="models__body_slider_sl swiper-slide card">
+                                    <div class="models__body_slider_sl swiper-slide card" data-micromodal-trigger="card1">
                                         <div class="card__head">
                                             <div class="card__head_name">100L5F</div>
                                             <div class="card__head_btn volume-btns__item">
@@ -194,7 +194,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="models__body_slider_sl swiper-slide card">
+                                    <div class="models__body_slider_sl swiper-slide card" data-micromodal-trigger="card2">
                                         <div class="card__head">
                                             <div class="card__head_name">120L5F</div>
                                             <div class="card__head_btn volume-btns__item">
@@ -284,7 +284,7 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="models__body_slider_sl swiper-slide card">
+                                    <div class="models__body_slider_sl swiper-slide card" data-micromodal-trigger="card3">
                                         <div class="card__head">
                                             <div class="card__head_name">100L5G</div>
                                             <div class="card__head_btn volume-btns__item">
@@ -446,10 +446,10 @@
                 </div>
                 <div class="container">
                     <div class="video-section__in">
-                        <div class="video-section__body">
+                        <div class="video-section__body" style="background-image: url('../img/icons/title-icon-1.svg');">
                             <span>Оживи воспоминания</span>
                             <span>с лазерным телевизором</span>
-                            <span></span>
+                            
                         </div>
                     </div>
                 </div>
@@ -492,7 +492,10 @@
                 </div>
                 <div class="container">
                     <div class="video-section__in">
-                        <div class="video-section__body">
+                        <div class="video-section__body" style="background-image: url('../img/icons/title-icon-2.svg');">
+                            <!-- <div class="video-section__body_icon">
+                                <img src="./img/icons/title-icon-1.svg" alt="">
+                            </div> -->
                             <span>Погрузитесь</span>
                             <span>всей семьей в мир</span>
                             <span>лазерных технологий</span>
@@ -538,7 +541,7 @@
                 </div>
                 <div class="container">
                     <div class="video-section__in">
-                        <div class="video-section__body">
+                        <div class="video-section__body" style="background-image: url('../img/icons/title-icon-3.svg');">
                             <span>Заявите о себе</span>
                             <span>с лазерными технологиями</span>
                         </div>
@@ -1036,6 +1039,281 @@
         @@include('./html/footer.html')
     </div>
     @@include('./html/mobmenu.html')
+
+
+    <!-- cards -->
+    <div class="modal-card" id="card1">
+        <div class="modal-card__layer" data-micromodal-close>
+            <div class="modal-card__body">
+                <div class="modal-card__body_head">
+                    <div class="modal-card__body_head_name">120L5G</div>
+                    <button class="modal-card__body_head_close" data-micromodal-close>
+                        <img src="./img/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-card__body_main card__body_slider swiper">
+                    <div class="modal-card__body_main_wr swiper-wrapper">
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-3.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <div class="modal-card__body_info">
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-1.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>120-дюймовый</span> антибликовый экран
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            Полноценные возможности телевизора
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            Поддержка <span>4К разрешения</span> и технологии <span>HDR</span>
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-4.svg" alt="">
+                        </div>
+                        <div class="text">
+                            Технология объёмного звучания <span>Dolby Atmos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-card__body_action">
+                    <a href="#" class="modal-card__body_action_btn btn-default">
+                        <div class="text">Подробнее о модели</div>
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_120_1398)">
+                                <path d="M19 17L19 5M19 5H7M19 5L6 18" stroke="white" stroke-width="2"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_120_1398">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                    </a>
+                    <a href="#" class="modal-card__body_action_btn btn-sm">
+                        <div class="text">где купить</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-card" id="card2">
+        <div class="modal-card__layer" data-micromodal-close>
+            <div class="modal-card__body">
+                <div class="modal-card__body_head">
+                    <div class="modal-card__body_head_name">120L5G</div>
+                    <button class="modal-card__body_head_close" data-micromodal-close>
+                        <img src="./img/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-card__body_main card__body_slider swiper">
+                    <div class="modal-card__body_main_wr swiper-wrapper">
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-3.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <div class="modal-card__body_info">
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-1.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>120-дюймовый</span> антибликовый экран
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            Полноценные возможности телевизора
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            Поддержка <span>4К разрешения</span> и технологии <span>HDR</span>
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-4.svg" alt="">
+                        </div>
+                        <div class="text">
+                            Технология объёмного звучания <span>Dolby Atmos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-card__body_action">
+                    <a href="#" class="modal-card__body_action_btn btn-default">
+                        <div class="text">Подробнее о модели</div>
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_120_1398)">
+                                <path d="M19 17L19 5M19 5H7M19 5L6 18" stroke="white" stroke-width="2"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_120_1398">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                    </a>
+                    <a href="#" class="modal-card__body_action_btn btn-sm">
+                        <div class="text">где купить</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-card" id="card3">
+        <div class="modal-card__layer" data-micromodal-close>
+            <div class="modal-card__body">
+                <div class="modal-card__body_head">
+                    <div class="modal-card__body_head_name">120L5G</div>
+                    <button class="modal-card__body_head_close" data-micromodal-close>
+                        <img src="./img/icons/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-card__body_main card__body_slider swiper">
+                    <div class="modal-card__body_main_wr swiper-wrapper">
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-1.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-2.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="modal-card__body_main_sl swiper-slide">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/models/model-1/img-3.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <div class="modal-card__body_info">
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-1.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <span>120-дюймовый</span> антибликовый экран
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            Полноценные возможности телевизора
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            Поддержка <span>4К разрешения</span> и технологии <span>HDR</span>
+                        </div>
+                    </div>
+                    <div class="modal-card__body_info_item">
+                        <div class="icon">
+                            <img src="./img/icons/descr-4.svg" alt="">
+                        </div>
+                        <div class="text">
+                            Технология объёмного звучания <span>Dolby Atmos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-card__body_action">
+                    <a href="#" class="modal-card__body_action_btn btn-default">
+                        <div class="text">Подробнее о модели</div>
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_120_1398)">
+                                <path d="M19 17L19 5M19 5H7M19 5L6 18" stroke="white" stroke-width="2"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_120_1398">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </div>
+                    </a>
+                    <a href="#" class="modal-card__body_action_btn btn-sm">
+                        <div class="text">где купить</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/app.min.js"></script>
 </body>
 </html>
