@@ -254,8 +254,66 @@
 
         &__body {
 
+
+            &_title {
+                font-size: 40px;
+                line-height: 46px;
+            }
             &_subtitle {
                 margin-bottom: 20px;
+                font-size: 14px;
+                line-height: 20px;
+
+            }
+
+            &_action {
+
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+
+        &__body {
+
+            &_action {
+                // justify-content: space-between;
+
+                &_btn {
+                    padding: 13px !important;
+                    margin: 0 4px;
+                }
+
+                &_btn.btn-sm {
+                    padding: 11px !important;
+                }
+            }
+        }
+
+        &__video {
+
+            &_action {
+
+                &_name {
+                    padding: 10px 0;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: left;
+                }
+            }
+
+            &_slider {
+
+                &_sl {
+                    
+                    &_video {
+                        height: 127px;
+                    }
+
+                   
+                }
             }
         }
     }

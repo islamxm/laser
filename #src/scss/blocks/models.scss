@@ -53,12 +53,15 @@
 
     .models {
 
+        &__in {
+            padding-top: 50px;
+        }
         &:after {
             display: none;
         }
 
         &__head {
-
+            margin-bottom: 30px;
             &_title {
                 width: 100%;
                 text-align: center;
@@ -79,7 +82,7 @@
                 }
 
                 &_sl {
-                    width: 48%;
+                    width: 48% !important;
                     margin-right: 0 !important;
                     display: flex;
                     flex-direction: column;
@@ -118,6 +121,30 @@
 
                     .card__action {
                         display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .models {
+
+        
+        &__body {
+
+            &_slider {
+
+                &_sl {
+                    .card__head {
+
+                        &_name {
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
                     }
                 }
             }
