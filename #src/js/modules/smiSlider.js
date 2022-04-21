@@ -20,4 +20,22 @@ export const smiSlider = () => {
             }
         });
     }
+
+    // window.addEventListener('load', () => {
+    //     const slides = document.querySelectorAll('.smi__body_slider_sl');
+
+    //     let arr = [];
+    //     let max;
+        
+    //     slides.forEach(sl => {
+    //         arr.push(sl.scrollHeight);
+    
+    //         max = Math.max(...arr);
+    //         console.log(max);
+    //         sl.style.cssText = `height: ${Math.max(...arr)}px !important`;
+    //     });
+
+    //     console.log(arr);
+    //     console.log(max);
+    // });
 };

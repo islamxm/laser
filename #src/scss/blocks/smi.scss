@@ -118,9 +118,13 @@
                 overflow: visible;
 
                 &_sl {
-
+                    display: flex;
+                    flex-direction: column;
                     &_body {
+                        flex: 1 0 auto;
                         padding: 20px;
+                        display: flex;
+                        flex-direction: column;
 
                         &_name {
                             font-size: 16px;
@@ -131,6 +135,7 @@
                         &_text {
                             font-size: 14px;
                             line-height: 20px;
+                            flex: 1 0 auto;
                         }
 
                         &_action {
