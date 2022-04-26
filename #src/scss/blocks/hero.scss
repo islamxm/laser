@@ -92,6 +92,7 @@
         background-size: contain;
         width: 45px;
         height: 45px;
+        cursor: pointer;
     }
 
     &__next {
@@ -105,6 +106,7 @@
         background-size: contain;
         width: 45px;
         height: 45px;
+        cursor: pointer;
     }
 
     &__pag {
@@ -118,6 +120,7 @@
         z-index: 10;
 
         &_item {
+            cursor: pointer;
             width: 18px;
             height: 18px;
             display: block;
@@ -372,6 +375,7 @@
                 width: 12px;
                 height: 12px;
                 margin: 0 8px;
+                
             }
         }
     }

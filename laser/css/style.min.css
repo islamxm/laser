@@ -973,6 +973,7 @@ body {
   background-size: contain;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 .hero__next {
   position: absolute;
@@ -985,6 +986,7 @@ body {
   background-size: contain;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 .hero__pag {
   display: flex;
@@ -997,6 +999,7 @@ body {
   z-index: 10;
 }
 .hero__pag_item {
+  cursor: pointer;
   width: 18px;
   height: 18px;
   display: block;
