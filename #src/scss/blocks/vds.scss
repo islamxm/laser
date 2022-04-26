@@ -1,0 +1,106 @@
+.vds {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__slider {
+
+        &_sl {
+
+            &_video {
+                height: 185px;
+                position: relative;
+                margin-bottom: 15px;
+                overflow: hidden;
+                background: rgba(51, 51, 51, 0.4);
+                backdrop-filter: blur(6px);
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &_action.active {
+                    opacity: 0;
+                    z-index: -1;
+                }
+
+                &_action {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 1;
+                    z-index: 10;
+                    @include def-anim;
+
+                    .hero__video_slider_sl_layer_btn {
+                        width: 51px;
+                        height: 51px;
+                        
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                    }
+                }
+            }
+
+            &_name {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .vds {
+
+        &__slider {
+            width: 80%;
+            overflow: visible;
+            &_sl {
+                opacity: .2;
+                @include def-anim;
+            }
+
+            &_sl.swiper-slide-active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .vds {
+
+        &__slider {
+
+            &_sl {  
+                &_video {
+                    height: 130px;
+                }
+
+                &_name {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+}
