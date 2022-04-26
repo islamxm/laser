@@ -1,29 +1,29 @@
-import Swiper, {Pagination, EffectFade} from "swiper";
+import Swiper, {Pagination, EffectFade, Autoplay} from "swiper";
 
 export const heroSlider = () => {
-    const el = document.querySelector('.hero__video_slider');
+    const el = document.querySelector('.hero__slider');
 
     if(el) {
         const slider = new Swiper(el, {
             slidesPerView: 1,
-            spaceBetween: 15,
+            spaceBetween: 0,
             modules: [Pagination, EffectFade],
-            pagination: {
-                el: '.hero__video_action_fr',
-                type: 'fraction',
-
+            
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
             },
-            // effect: 'fade',
-            // fadeEffect: {
-            //     crossFade: true
-            // },
-            breakpoints: {
-                1150: {
-                    modules: [EffectFade],
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                }
+            navigation: {
+                prevEl: '.hero__prev',
+                nextEl: '.hero__next'
+            },
+            pagination: {
+                el:'.hero__pag',
+                type: 'bullets',
+                bulletClass: 'hero__pag_item',
+                bulletActiveClass: 'active'
             }
+           
         });
     }
 }
