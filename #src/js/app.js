@@ -9,6 +9,7 @@ import { smiSlider } from './modules/smiSlider.js';
 import { videos } from './modules/videos.js';
 import MicroModal from 'micromodal';
 import { vdsSlider } from './modules/vdsSlider.js';
+import { revsSlider } from './modules/revsSlider.js';
 
 
 
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     videos();
     mobmenu();
     vdsSlider();
+    revsSlider();
     MicroModal.init();
 
 });
